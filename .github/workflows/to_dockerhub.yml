@@ -1,0 +1,47 @@
+name: 镜像自动同步
+on:
+  workflow_dispatch
+
+  schedule:
+    - cron: '2 2 * * *'
+
+# 每天凌晨2点执行一次
+
+env:
+  TZ: Asia/Shanghai
+
+
+jobs:
+  buildx:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@master
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@master
+
+      - name: Set outputs
+        id: vars
+        run: |
+          echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+
+
+      - name: Get current date
+        id: date
+        run: |
+          echo "::set-output name=today::$(date +'%Y-%m-%d')"
+          echo  $(date)
+          docker login registry.cn-hongkong.aliyuncs.com -u zhoukunpeng504@163.com -p ${{ secrets.DOCKHUB_USER }}
+
+
+
+      - name: run py
+        run: |
+          python3  to_dockerhub.py
+
+
