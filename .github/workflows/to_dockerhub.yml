@@ -1,7 +1,6 @@
 name: 镜像自动同步
 on:
-  workflow_dispatch
-
+  workflow_dispatch:
   schedule:
     - cron: '2 2 * * *'
 
