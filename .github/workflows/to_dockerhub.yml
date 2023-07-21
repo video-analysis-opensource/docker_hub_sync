@@ -35,7 +35,7 @@ jobs:
         run: |
           echo "::set-output name=today::$(date +'%Y-%m-%d')"
           echo  $(date)
-          docker login registry.cn-hongkong.aliyuncs.com -u zhoukunpeng504@163.com -p ${{ secrets.DOCKHUB_USER }}
+          docker login registry.cn-hongkong.aliyuncs.com -u zhoukunpeng504@163.com -p ${{ secrets.GC }}
 
 
 
