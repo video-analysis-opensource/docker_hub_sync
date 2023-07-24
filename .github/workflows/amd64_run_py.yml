@@ -1,4 +1,4 @@
-name: 镜像自动同步
+name: AMD64同步脚本
 on:
   workflow_dispatch:
   schedule:
@@ -39,8 +39,9 @@ jobs:
 
 
 
-      - name: run py
+      - name: run python
         run: |
-          python3  to_dockerhub.py
+          pip3 install -r requirements.txt
+          cd amd64 && python3 run.py ${{ secrets.ALI_KEY_ID }} ${{ secrets.ALI_KEY_SECRET }}
 
 
