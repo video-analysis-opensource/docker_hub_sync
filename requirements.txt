@@ -1,0 +1,2 @@
+aliyun-python-sdk-cr==4.1.2
+requests
