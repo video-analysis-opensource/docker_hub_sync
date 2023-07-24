@@ -14,7 +14,7 @@ from aliyunsdkcore.auth.credentials import StsTokenCredential
 
 def get_dockerhub_tags(image_name):
     "获取dockerhub中某镜像的TAG list"
-    image_tags = requests.get('https://hub.docker.com/v2/repositories/pytorch/pytorch/tags/?page_size=50&page=1&name&ordering').json()
+    image_tags = requests.get('https://hub.docker.com/v2/repositories/pytorch/pytorch/tags/?page_size=100&page=1&name&ordering').json()
     image_tags = [i['name'] for i in copy.deepcopy(image_tags.get("results", [])) if i]
     return image_tags
 
