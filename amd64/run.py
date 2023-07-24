@@ -12,14 +12,24 @@ from aliyunsdkcore.auth.credentials import AccessKeyCredential
 from aliyunsdkcore.auth.credentials import StsTokenCredential
 
 
-def get_dockerhub_tags(image_name):
+def get_dockerhub_tags(image_name, platform='amd64', with_digest=False):
     "获取dockerhub中某镜像的TAG list"
-    image_tags = requests.get('https://hub.docker.com/v2/repositories/pytorch/pytorch/tags/?page_size=100&page=1&name&ordering').json()
-    image_tags = [i['name'] for i in copy.deepcopy(image_tags.get("results", [])) if i]
-    return image_tags
+    image_tags = requests.get(f'https://hub.docker.com/v2/repositories/{image_name}/tags/?'
+                              'page_size=100&page=1&name&ordering').json()
+    result = []
+    for i in copy.deepcopy(image_tags.get("results", [])):
+        if i:
+            tag_name = i['name']
+            _ = dict([(j['architecture'], j['digest'].lstrip("sha256:")) for j in i['images']])
+            if platform in _:
+                if with_digest:
+                    result.append((tag_name, _[platform]))
+                else:
+                    result.append(tag_name)
+    return result
 
 
-def get_aliyun_tags(image_name):
+def get_aliyun_tags(image_name, platform='amd64', with_digest=False):
     "获取阿里云中镜像的TAG list"
     credentials = AccessKeyCredential(key_id, key_secret)
     client = AcsClient(region_id=reign, credential=credentials)
@@ -42,7 +52,10 @@ def get_aliyun_tags(image_name):
         #print(response)
         result = []
         for i in response['data']['tags']:
-            result.append(i['tag'])
+            if with_digest:
+                result.append((i['tag'], i['digest']))
+            else:
+                result.append(i['tag'])
         return result
     except Exception as e :
         print(('Except', str(e)))
