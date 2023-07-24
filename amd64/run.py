@@ -75,8 +75,12 @@ if __name__ == '__main__':
                     run_cmd(f"docker pull {source_image}:{tag}")
                     run_cmd(f"docker tag {source_image}:{tag} {domain}/{target_image}:{tag}")
                     run_cmd(f"docker push {domain}/{target_image}:{tag}")
+                    run_cmd(f"docker rmi {source_image}:{tag}")
+                    run_cmd(f"docker rmi {domain}/{target_image}:{tag}")
 
         if 'latest' in res_dockerhub:
             run_cmd(f"docker pull {source_image}:latest")
             run_cmd(f"docker tag {source_image}:latest {domain}/{target_image}:latest")
             run_cmd(f"docker push {domain}/{target_image}:latest")
+            run_cmd(f"docker rmi {source_image}:latest")
+            run_cmd(f"docker rmi {domain}/{target_image}:latest")
