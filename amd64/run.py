@@ -74,7 +74,7 @@ if __name__ == '__main__':
                 if tag not in res_aliyun:
                     run_cmd(f"docker pull {source_image}:{tag}")
                     run_cmd(f"docker tag {source_image}:{tag} {domain}/{target_image}:{tag}")
-                    run_cmd(f"docker push {source_image}:{tag} {domain}/{target_image}:{tag}")
+                    run_cmd(f"docker push {domain}/{target_image}:{tag}")
 
         if 'latest' in res_dockerhub:
             run_cmd(f"docker pull {source_image}:latest")
