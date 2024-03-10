@@ -78,21 +78,30 @@ if __name__ == '__main__':
         config_info = f.readlines()
     config_info = [i.split() for i in config_info]
     for source_image,target_image in config_info:
-        print(source_image,target_image)
-        res_dockerhub = get_dockerhub_tags(source_image)
-        res_aliyun = get_aliyun_tags(target_image)
-        for tag in res_dockerhub:
-            if tag != 'latest':
-                if tag not in res_aliyun:
-                    run_cmd(f"docker pull {source_image}:{tag}")
-                    run_cmd(f"docker tag {source_image}:{tag} {domain}/{target_image}:{tag}")
-                    run_cmd(f"docker push {domain}/{target_image}:{tag}")
-                    run_cmd(f"docker rmi {source_image}:{tag}")
-                    run_cmd(f"docker rmi {domain}/{target_image}:{tag}")
+        if ':' in source_image and ':' in target_image:
+            # 带tag
+            run_cmd(f"docker pull {source_image}")
+            run_cmd(f"docker tag {source_image} {domain}/{target_image}")
+            run_cmd(f"docker push {domain}/{target_image}")
+            run_cmd(f"docker rmi {source_image}")
+            run_cmd(f"docker rmi {domain}/{target_image}")
+            pass
+        if ':' not in source_image and ':' not in target_image:
+            print(source_image,target_image)
+            res_dockerhub = get_dockerhub_tags(source_image)
+            res_aliyun = get_aliyun_tags(target_image)
+            for tag in res_dockerhub:
+                if tag != 'latest':
+                    if tag not in res_aliyun:
+                        run_cmd(f"docker pull {source_image}:{tag}")
+                        run_cmd(f"docker tag {source_image}:{tag} {domain}/{target_image}:{tag}")
+                        run_cmd(f"docker push {domain}/{target_image}:{tag}")
+                        run_cmd(f"docker rmi {source_image}:{tag}")
+                        run_cmd(f"docker rmi {domain}/{target_image}:{tag}")
 
-        if 'latest' in res_dockerhub:
-            run_cmd(f"docker pull {source_image}:latest")
-            run_cmd(f"docker tag {source_image}:latest {domain}/{target_image}:latest")
-            run_cmd(f"docker push {domain}/{target_image}:latest")
-            run_cmd(f"docker rmi {source_image}:latest")
-            run_cmd(f"docker rmi {domain}/{target_image}:latest")
+            if 'latest' in res_dockerhub:
+                run_cmd(f"docker pull {source_image}:latest")
+                run_cmd(f"docker tag {source_image}:latest {domain}/{target_image}:latest")
+                run_cmd(f"docker push {domain}/{target_image}:latest")
+                run_cmd(f"docker rmi {source_image}:latest")
+                run_cmd(f"docker rmi {domain}/{target_image}:latest")
