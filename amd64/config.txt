@@ -1,3 +1,2 @@
-pytorch/pytorch  zhoukunpeng/pytorch
 rocm/dev-ubuntu-20.04:5.2-complete zhoukunpeng/rocm-dev-ubuntu-20.04:5.2-complete
 rocm/rocm-terminal:5.2 zhoukunpeng/rocm-terminal:5.2
