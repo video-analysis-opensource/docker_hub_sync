@@ -8,4 +8,9 @@ pytorch/pytorch:2.3.0-cuda12.1-cudnn8-devel zhoukunpeng/pytorch:2.3.0-cuda12.1-c
 pytorch/pytorch:2.3.0-cuda12.1-cudnn8-runtime zhoukunpeng/pytorch:2.3.0-cuda12.1-cudnn8-runtime
 pytorch/pytorch:2.3.0-cuda11.8-cudnn8-devel zhoukunpeng/pytorch:2.3.0-cuda11.8-cudnn8-devel
 pytorch/pytorch:2.3.0-cuda11.8-cudnn8-runtime zhoukunpeng/pytorch:2.3.0-cuda11.8-cudnn8-runtime
+zhoukunpeng505/py38:2023-06-16-9f49228 zhoukunpeng/py38:2023-06-16-9f49228
+zhoukunpeng505/py38:2023-06-16-991451c zhoukunpeng/py38:2023-06-16-991451c
+zhoukunpeng505/py38:2023-06-15-fb5dcee zhoukunpeng/py38:2023-06-15-fb5dcee
+zhoukunpeng505/py38:2023-06-15-ab28ee9 zhoukunpeng/py38:2023-06-15-ab28ee9
+
 

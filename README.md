@@ -87,5 +87,19 @@ docker pull registry.cn-hongkong.aliyuncs.com/zhoukunpeng/dev-ubuntu-20.04:[镜�
 ```bash
 5.2-complete
 ```
+## 4. py38
+python3.8基础运行环境image， by  zhoukunpeng<br/>
+同步自：zhoukunpeng505/py38:*
+```bash
+docker pull registry.cn-hongkong.aliyuncs.com/zhoukunpeng/py38:[镜像版本号]
+```
+当前已包含的版本
+```bash
+2023-06-16-9f49228
+2023-06-16-991451c
+2023-06-15-fb5dcee
+2023-06-15-ab28ee9
+```
+
 ## 问题反馈
 如有AI开发相关docker image需要从dockerhub同步，请提交issue，我这边会第一时间处理。
