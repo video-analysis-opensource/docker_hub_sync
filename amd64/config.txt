@@ -1,2 +1,4 @@
 rocm/dev-ubuntu-20.04:5.2-complete zhoukunpeng/rocm-dev-ubuntu-20.04:5.2-complete
 rocm/rocm-terminal:5.2 zhoukunpeng/rocm-terminal:5.2
+pytorch/pytorch:2.3.1-cuda11.8-cudnn8-devel zhoukunpeng/pytorch:2.3.1-cuda11.8-cudnn8-devel
+
