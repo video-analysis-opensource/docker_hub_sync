@@ -6,9 +6,16 @@
 ```bash
 docker pull registry.cn-hongkong.aliyuncs.com/zhoukunpeng/pytorch:[镜像版本号]
 ```
-当前已包含的版本：(截止2023-7-25)
+当前已包含的版本：(截止2024-7-23)
 ```bash
-latest
+2.3.1-cuda11.8-cudnn8-devel
+2.3.1-cuda11.8-cudnn8-runtime
+2.3.1-cuda12.1-cudnn8-devel 
+2.3.1-cuda12.1-cudnn8-runtime 
+2.3.0-cuda12.1-cudnn8-devel 
+2.3.0-cuda12.1-cudnn8-runtime 
+2.3.0-cuda11.8-cudnn8-devel 
+2.3.0-cuda11.8-cudnn8-runtime
 2.0.1-cuda11.7-cudnn8-runtime
 2.0.1-cuda11.7-cudnn8-devel
 2.0.0-cuda11.7-cudnn8-runtime
