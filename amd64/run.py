@@ -6,11 +6,13 @@ import sys
 import json
 import requests
 import copy
-from aliyunsdkcore.client import AcsClient
-from aliyunsdkcore.request import CommonRequest
-from aliyunsdkcore.auth.credentials import AccessKeyCredential
-from aliyunsdkcore.auth.credentials import StsTokenCredential
-
+try:
+    from aliyunsdkcore.client import AcsClient
+    from aliyunsdkcore.request import CommonRequest
+    from aliyunsdkcore.auth.credentials import AccessKeyCredential
+    from aliyunsdkcore.auth.credentials import StsTokenCredential
+except ImportError:
+    pass
 
 def get_dockerhub_tags(image_name, platform='amd64', with_digest=False):
     "获取dockerhub中某镜像的TAG list"
@@ -76,7 +78,10 @@ if __name__ == '__main__':
     current_dir = os.path.abspath(os.path.dirname(__file__))
     with open(os.path.join(current_dir, "config.txt"), 'r') as f:
         config_info = f.readlines()
-    config_info = [i.split() for i in config_info]
+    config_info = [i.strip().split() for i in config_info]
+    config_info = [i for i in config_info if i]
+    print(config_info)
+    # raise
     for source_image,target_image in config_info:
         if ':' in source_image and ':' in target_image:
             # 带tag
