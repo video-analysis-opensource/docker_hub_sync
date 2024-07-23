@@ -70,3 +70,19 @@ docker pull registry.cn-hongkong.aliyuncs.com/zhoukunpeng/pytorch:[镜像版本�
 0.4.1-cuda9-cudnn7-devel
 0.4-cuda9-cudnn7-devel
 ```
+## 2. rocm/rocm-terminal
+```bash
+docker pull registry.cn-hongkong.aliyuncs.com/zhoukunpeng/rocm-terminal:[镜像版本号]
+```
+当前已包含的版本：(截止2024-7-23)
+```bash
+5.2
+```
+## 3. rocm/dev-ubuntu-20.04
+```bash
+docker pull registry.cn-hongkong.aliyuncs.com/zhoukunpeng/rocm-terminal:[镜像版本号]
+```
+当前已包含的版本：(截止2024-7-23)
+```bash
+5.2-complete
+```
