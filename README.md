@@ -80,7 +80,7 @@ docker pull registry.cn-hongkong.aliyuncs.com/zhoukunpeng/rocm-terminal:[镜像�
 ```
 ## 3. rocm/dev-ubuntu-20.04
 ```bash
-docker pull registry.cn-hongkong.aliyuncs.com/zhoukunpeng/rocm-terminal:[镜像版本号]
+docker pull registry.cn-hongkong.aliyuncs.com/zhoukunpeng/dev-ubuntu-20.04:[镜像版本号]
 ```
 当前已包含的版本：(截止2024-7-23)
 ```bash
