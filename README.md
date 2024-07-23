@@ -1,5 +1,6 @@
 # docker_hub_sync
-同步AI开发常用的docker镜像到阿里云镜像仓库，便于在国内快速拉取镜像,相比于从官方拉取速度提高N倍且更加稳定。
+由于国内已经无法拉取dockerhub镜像。<br/>
+同步AI开发常用的docker镜像到阿里云镜像仓库，便于在国内快速拉取, 助力开发。
 
 ## 1. pytorch
 每日同步从dockerhub同步一次，准实时和官方保持一致。使用方式：
@@ -86,3 +87,5 @@ docker pull registry.cn-hongkong.aliyuncs.com/zhoukunpeng/dev-ubuntu-20.04:[镜�
 ```bash
 5.2-complete
 ```
+## 问题反馈
+如有AI开发相关docker image需要从dockerhub同步，请提交issue，我这边会第一时间处理。
