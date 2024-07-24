@@ -12,5 +12,28 @@ zhoukunpeng505/py38:2023-06-16-9f49228 zhoukunpeng/py38:2023-06-16-9f49228
 zhoukunpeng505/py38:2023-06-16-991451c zhoukunpeng/py38:2023-06-16-991451c
 zhoukunpeng505/py38:2023-06-15-fb5dcee zhoukunpeng/py38:2023-06-15-fb5dcee
 zhoukunpeng505/py38:2023-06-15-ab28ee9 zhoukunpeng/py38:2023-06-15-ab28ee9
-
+tensorflow/tensorflow:2.17.0-jupyter zhoukunpeng/tensorflow:2.17.0-jupyter
+tensorflow/tensorflow:2.17.0-gpu-jupyter zhoukunpeng/tensorflow:2.17.0-gpu-jupyter
+tensorflow/tensorflow:2.17.0-gpu zhoukunpeng/tensorflow:2.17.0-gpu
+tensorflow/tensorflow:2.17.0 zhoukunpeng/tensorflow:2.17.0
+tensorflow/tensorflow:2.16.2-jupyter zhoukunpeng/tensorflow:2.16.2-jupyter
+tensorflow/tensorflow:2.16.2-gpu-jupyter zhoukunpeng/tensorflow:2.16.2-gpu-jupyter
+tensorflow/tensorflow:2.16.2-gpu zhoukunpeng/tensorflow:2.16.2-gpu
+tensorflow/tensorflow:2.16.2 zhoukunpeng/tensorflow:2.16.2
+tensorflow/tensorflow:2.16.1-jupyter zhoukunpeng/tensorflow:2.16.1-jupyter
+tensorflow/tensorflow:2.16.1-gpu-jupyter zhoukunpeng/tensorflow:2.16.1-gpu-jupyter
+tensorflow/tensorflow:2.16.1-gpu zhoukunpeng/tensorflow:2.16.1-gpu
+tensorflow/tensorflow:2.16.1 zhoukunpeng/tensorflow:2.16.1
+tensorflow/tensorflow:2.15.0-jupyter zhoukunpeng/tensorflow:2.15.0-jupyter
+tensorflow/tensorflow:2.15.0-gpu-jupyter zhoukunpeng/tensorflow:2.15.0-gpu-jupyter
+tensorflow/tensorflow:2.15.0-gpu zhoukunpeng/tensorflow:2.15.0-gpu
+tensorflow/tensorflow:2.15.0 zhoukunpeng/tensorflow:2.15.0
+tensorflow/tensorflow:2.14.0-jupyter zhoukunpeng/tensorflow:2.14.0-jupyter
+tensorflow/tensorflow:2.14.0-gpu-jupyter zhoukunpeng/tensorflow:2.14.0-gpu-jupyter
+tensorflow/tensorflow:2.14.0-gpu zhoukunpeng/tensorflow:2.14.0-gpu
+tensorflow/tensorflow:2.14.0 zhoukunpeng/tensorflow:2.14.0
+tensorflow/tensorflow:2.9.1-jupyter zhoukunpeng/tensorflow:2.9.1-jupyter
+tensorflow/tensorflow:2.9.1-gpu-jupyter zhoukunpeng/tensorflow:2.9.1-gpu-jupyter
+tensorflow/tensorflow:2.9.1-gpu zhoukunpeng/tensorflow:2.9.1-gpu
+tensorflow/tensorflow:2.9.1 zhoukunpeng/tensorflow:2.9.1
 
