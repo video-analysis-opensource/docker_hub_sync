@@ -36,4 +36,21 @@ tensorflow/tensorflow:2.9.1-jupyter zhoukunpeng/tensorflow:2.9.1-jupyter
 tensorflow/tensorflow:2.9.1-gpu-jupyter zhoukunpeng/tensorflow:2.9.1-gpu-jupyter
 tensorflow/tensorflow:2.9.1-gpu zhoukunpeng/tensorflow:2.9.1-gpu
 tensorflow/tensorflow:2.9.1 zhoukunpeng/tensorflow:2.9.1
+ubuntu:oracular zhoukunpeng/ubuntu:oracular
+ubuntu:oracular-20240617 zhoukunpeng/ubuntu:oracular-20240617
+ubuntu:24.10 zhoukunpeng/ubuntu:24.10
+ubuntu:jammy zhoukunpeng/ubuntu:jammy
+ubuntu:22.04 zhoukunpeng/ubuntu:22.04
+ubuntu:noble zhoukunpeng/ubuntu:noble
+ubuntu:24.04 zhoukunpeng/ubuntu:24.04
+ubuntu:23.10 zhoukunpeng/ubuntu:23.10
+ubuntu:22.04 zhoukunpeng/ubuntu:22.04
+ubuntu:20.04 zhoukunpeng/ubuntu:20.04
+centos:centos7.9.2009 zhoukunpeng/centos:centos7.9.2009
+centos:centos7 zhoukunpeng/centos:centos7
+centos:centos8.4.2105 zhoukunpeng/centos:centos8.4.2105
+centos:centos8 zhoukunpeng/centos:centos8
+centos:centos6.10 zhoukunpeng/centos:centos6.10
+centos:centos6 zhoukunpeng/centos:centos6
+centos:8.2.2004 zhoukunpeng/centos:8.2.2004
 

@@ -1,13 +1,21 @@
 # docker_hub_sync
 由于国内已经无法拉取dockerhub镜像。<br/>
-同步AI开发常用的docker镜像到阿里云镜像仓库，便于在国内快速拉取, 助力开发。
+同步AI开发常用的docker镜像到阿里云镜像仓库，便于在国内快速拉取, 助力开发。<br/>
+当前已包含如下镜像:<br/>
+pytorch tensorflow rocm-terminal ubuntu centos
 
-## 1. pytorch
-每日同步从dockerhub同步一次，准实时和官方保持一致。使用方式：
+## 1. 说明
+每日同步从dockerhub同步一次，准实时和官方保持一致。<br/>
+使用方式：
 ```bash
-docker pull registry.cn-hongkong.aliyuncs.com/zhoukunpeng/pytorch:[镜像版本号]
+docker pull registry.cn-hongkong.aliyuncs.com/zhoukunpeng/[镜像名]:[镜像版本号]
 ```
-当前已包含的版本：(截止2024-7-23)
+```bash
+# 如：pytorch
+docker pull registry.cn-hongkong.aliyuncs.com/zhoukunpeng/pytorch:2.3.1-cuda11.8-cudnn8-devel
+```
+## 2. 当前包含的镜像
+- pytorch 同步自dockerhub。 pytorch/pytorch:tag。目前已同步如下版本
 ```bash
 2.3.1-cuda11.8-cudnn8-devel
 2.3.1-cuda11.8-cudnn8-runtime
@@ -71,28 +79,18 @@ docker pull registry.cn-hongkong.aliyuncs.com/zhoukunpeng/pytorch:[镜像版本�
 0.4.1-cuda9-cudnn7-devel
 0.4-cuda9-cudnn7-devel
 ```
-## 2. rocm/rocm-terminal
-```bash
-docker pull registry.cn-hongkong.aliyuncs.com/zhoukunpeng/rocm-terminal:[镜像版本号]
-```
-当前已包含的版本：(截止2024-7-23)
+- rocm-terminal  同步自dockerhub。rocm/rocm-terminal
+当前已包含的版本：
 ```bash
 5.2
 ```
-## 3. rocm/dev-ubuntu-20.04
-```bash
-docker pull registry.cn-hongkong.aliyuncs.com/zhoukunpeng/dev-ubuntu-20.04:[镜像版本号]
-```
-当前已包含的版本：(截止2024-7-23)
+- dev-ubuntu-20.04 同步自dockerhub。 rocm/dev-ubuntu-20.04
+当前已包含的版本：
 ```bash
 5.2-complete
 ```
-## 4. py38
+- py38 同步自dockerhub。 zhoukunpeng505/py38
 python3.8基础运行环境image， by  zhoukunpeng<br/>
-同步自：zhoukunpeng505/py38:*
-```bash
-docker pull registry.cn-hongkong.aliyuncs.com/zhoukunpeng/py38:[镜像版本号]
-```
 当前已包含的版本
 ```bash
 2023-06-16-9f49228
@@ -100,6 +98,28 @@ docker pull registry.cn-hongkong.aliyuncs.com/zhoukunpeng/py38:[镜像版本号]
 2023-06-15-fb5dcee
 2023-06-15-ab28ee9
 ```
-
+- ubuntu 同步自官方源。 ubuntu,当前已包含版本：
+```bash
+oracular 
+oracular-20240617 
+24.10 
+jammy 
+22.04 
+noble 
+24.04 
+23.10 
+22.04 
+20.04  
+```
+- centos 同步自官方源。 centos,当前已包含版本：
+```bash
+centos7.9.2009 
+centos7 
+centos8.4.2105 
+centos8 
+centos6.10 
+centos6 
+8.2.2004 
+```
 ## 问题反馈
 如有AI开发相关docker image需要从dockerhub同步，请提交issue，我这边会第一时间处理。
