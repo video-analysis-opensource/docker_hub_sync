@@ -85,12 +85,16 @@ if __name__ == '__main__':
     for source_image,target_image in config_info:
         if ':' in source_image and ':' in target_image:
             # 带tag
-            run_cmd(f"docker pull {source_image}")
-            run_cmd(f"docker tag {source_image} {domain}/{target_image}")
-            run_cmd(f"docker push {domain}/{target_image}")
-            run_cmd(f"docker rmi {source_image}")
-            run_cmd(f"docker rmi {domain}/{target_image}")
-            pass
+            # 先判断此tag是否已存在
+            _0, _1 = target_image.split(":")
+            res_aliyun = get_aliyun_tags(_0)
+            if _1 not in res_aliyun:
+                run_cmd(f"docker pull {source_image}")
+                run_cmd(f"docker tag {source_image} {domain}/{target_image}")
+                run_cmd(f"docker push {domain}/{target_image}")
+                run_cmd(f"docker rmi {source_image}")
+                run_cmd(f"docker rmi {domain}/{target_image}")
+                pass
         if ':' not in source_image and ':' not in target_image:
             print(source_image,target_image)
             res_dockerhub = get_dockerhub_tags(source_image)
