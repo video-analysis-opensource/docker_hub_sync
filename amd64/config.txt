@@ -53,4 +53,6 @@ centos:centos8 zhoukunpeng/centos:centos8
 centos:centos6.10 zhoukunpeng/centos:centos6.10
 centos:centos6 zhoukunpeng/centos:centos6
 centos:8.2.2004 zhoukunpeng/centos:8.2.2004
-
+openjdk:8 zhoukunpeng/openjdk:8
+openjdk:11 zhoukunpeng/openjdk:11
+openjdk:17 zhoukunpeng/openjdk:17

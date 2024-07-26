@@ -2,7 +2,7 @@
 由于国内已经无法拉取dockerhub镜像。<br/>
 同步AI开发常用的docker镜像到阿里云镜像仓库，便于在国内快速拉取, 助力开发。<br/>
 当前已包含如下镜像:<br/>
-pytorch tensorflow rocm-terminal ubuntu centos
+pytorch tensorflow rocm-terminal ubuntu centos openjdk
 
 ## 1. 说明
 每日同步从dockerhub同步一次，准实时和官方保持一致。<br/>
@@ -79,6 +79,33 @@ docker pull registry.cn-hongkong.aliyuncs.com/zhoukunpeng/pytorch:2.3.1-cuda11.8
 0.4.1-cuda9-cudnn7-devel
 0.4-cuda9-cudnn7-devel
 ```
+- tensorflow  同步自dockerhub。tensorflow/tensorflow
+```bash
+2.17.0-jupyter 
+2.17.0-gpu-jupyter 
+2.17.0-gpu 
+2.17.0 
+2.16.2-jupyter 
+2.16.2-gpu-jupyter 
+2.16.2-gpu 
+2.16.2 
+2.16.1-jupyter 
+2.16.1-gpu-jupyter 
+2.16.1-gpu 
+2.16.1 
+2.15.0-jupyter 
+2.15.0-gpu-jupyter 
+2.15.0-gpu 
+2.15.0 
+2.14.0-jupyter 
+2.14.0-gpu-jupyter 
+2.14.0-gpu 
+2.14.0 
+2.9.1-jupyter 
+2.9.1-gpu-jupyter 
+2.9.1-gpu 
+2.9.1
+```
 - rocm-terminal  同步自dockerhub。rocm/rocm-terminal
 当前已包含的版本：
 ```bash
@@ -120,6 +147,12 @@ centos8
 centos6.10 
 centos6 
 8.2.2004 
+```
+- openjdk  同步自官方源。 openjdk 当前已包含版本：
+```bash
+8
+11
+17
 ```
 ## 问题反馈
 如有AI开发相关docker image需要从dockerhub同步，请提交issue，我这边会第一时间处理。
