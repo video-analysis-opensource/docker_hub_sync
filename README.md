@@ -184,5 +184,9 @@ registry.cn-hongkong.aliyuncs.com/zhoukunpeng/mariadb:10.8.7
 registry.cn-hongkong.aliyuncs.com/zhoukunpeng/mariadb:11.1
 registry.cn-hongkong.aliyuncs.com/zhoukunpeng/mariadb:11.2
 ```
+- postgis
+```bash
+registry.cn-hongkong.aliyuncs.com/zhoukunpeng/postgres11_postgis_cube:latest
+```
 ## 问题反馈
 如有AI开发相关docker image需要从dockerhub同步，请提交issue，我这边会第一时间处理。
