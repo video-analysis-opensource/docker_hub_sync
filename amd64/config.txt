@@ -66,3 +66,15 @@ nginx:1.25.4 zhoukunpeng/nginx:1.25.4
 nginx:1.25.3 zhoukunpeng/nginx:1.25.3
 nginx:1.25.2 zhoukunpeng/nginx:1.25.2
 nginx:1.25.1 zhoukunpeng/nginx:1.25.1
+xwqqwx0371/postgres11_postgis_cube:latest postgres11_postgis_cube
+mysql:5.6 zhoukunpeng/mysql:5.6
+mysql:5.7 zhoukunpeng/mysql:5.7
+mysql:8.0 zhoukunpeng/mysql:8.0
+mariadb:10.8.2 zhoukunpeng/mariadb:10.8.2
+mariadb:10.8.3 zhoukunpeng/mariadb:10.8.3
+mariadb:10.8.4 zhoukunpeng/mariadb:10.8.4
+mariadb:10.8.5 zhoukunpeng/mariadb:10.8.5
+mariadb:10.8.6 zhoukunpeng/mariadb:10.8.6
+mariadb:10.8.7 zhoukunpeng/mariadb:10.8.7
+mariadb:11.1 zhoukunpeng/mariadb:11.1
+mariadb:11.2 zhoukunpeng/mariadb:11.2

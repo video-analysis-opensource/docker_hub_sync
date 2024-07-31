@@ -154,8 +154,6 @@ registry.cn-hongkong.aliyuncs.com/zhoukunpeng/openjdk:8
 registry.cn-hongkong.aliyuncs.com/zhoukunpeng/openjdk:11
 registry.cn-hongkong.aliyuncs.com/zhoukunpeng/openjdk:17
 ```
-## 问题反馈
-如有AI开发相关docker image需要从dockerhub同步，请提交issue，我这边会第一时间处理。
 - nginx 同步自官方源。 当前已包括：
 ```bash
 registry.cn-hongkong.aliyuncs.com/zhoukunpeng/nginx:1.27
@@ -169,3 +167,22 @@ registry.cn-hongkong.aliyuncs.com/zhoukunpeng/nginx:1.25.3
 registry.cn-hongkong.aliyuncs.com/zhoukunpeng/nginx:1.25.2
 registry.cn-hongkong.aliyuncs.com/zhoukunpeng/nginx:1.25.1 
 ```
+- mysql
+```bash
+registry.cn-hongkong.aliyuncs.com/zhoukunpeng/mysql:5.6
+registry.cn-hongkong.aliyuncs.com/zhoukunpeng/mysql:5.7
+registry.cn-hongkong.aliyuncs.com/zhoukunpeng/mysql:8.0
+```
+- mariadb
+```bash
+registry.cn-hongkong.aliyuncs.com/zhoukunpeng/mariadb:10.8.2
+registry.cn-hongkong.aliyuncs.com/zhoukunpeng/mariadb:10.8.3
+registry.cn-hongkong.aliyuncs.com/zhoukunpeng/mariadb:10.8.4
+registry.cn-hongkong.aliyuncs.com/zhoukunpeng/mariadb:10.8.5
+registry.cn-hongkong.aliyuncs.com/zhoukunpeng/mariadb:10.8.6
+registry.cn-hongkong.aliyuncs.com/zhoukunpeng/mariadb:10.8.7
+registry.cn-hongkong.aliyuncs.com/zhoukunpeng/mariadb:11.1
+registry.cn-hongkong.aliyuncs.com/zhoukunpeng/mariadb:11.2
+```
+## 问题反馈
+如有AI开发相关docker image需要从dockerhub同步，请提交issue，我这边会第一时间处理。
