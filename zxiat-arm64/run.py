@@ -89,7 +89,7 @@ if __name__ == '__main__':
             _0, _1 = target_image.split(":")
             res_aliyun = get_aliyun_tags(_0)
             if _1 not in res_aliyun:
-                run_cmd(f"docker pull {source_image}")
+                run_cmd(f"docker pull {source_image} --platform=arm64 ")
                 run_cmd(f"docker tag {source_image} {domain}/{target_image}")
                 run_cmd(f"docker push {domain}/{target_image}")
                 run_cmd(f"docker rmi {source_image}")
@@ -102,14 +102,14 @@ if __name__ == '__main__':
             for tag in res_dockerhub:
                 if tag != 'latest':
                     if tag not in res_aliyun:
-                        run_cmd(f"docker pull {source_image}:{tag}")
+                        run_cmd(f"docker pull {source_image}:{tag} --platform=arm64 ")
                         run_cmd(f"docker tag {source_image}:{tag} {domain}/{target_image}:{tag}")
                         run_cmd(f"docker push {domain}/{target_image}:{tag}")
                         run_cmd(f"docker rmi {source_image}:{tag}")
                         run_cmd(f"docker rmi {domain}/{target_image}:{tag}")
 
             if 'latest' in res_dockerhub:
-                run_cmd(f"docker pull {source_image}:latest")
+                run_cmd(f"docker pull {source_image}:latest --platform=arm64")
                 run_cmd(f"docker tag {source_image}:latest {domain}/{target_image}:latest")
                 run_cmd(f"docker push {domain}/{target_image}:latest")
                 run_cmd(f"docker rmi {source_image}:latest")
