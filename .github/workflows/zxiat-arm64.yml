@@ -1,4 +1,4 @@
-name: AMD64同步脚本
+name: zxiat-arm64同步脚本
 on:
   workflow_dispatch:
   schedule:
@@ -42,6 +42,6 @@ jobs:
       - name: run python
         run: |
           pip3 install -r requirements.txt
-          cd amd64 && python3 run.py ${{ secrets.ALI_KEY_ID }} ${{ secrets.ALI_KEY_SECRET }}
+          cd zxiat-arm64 && python3 run.py ${{ secrets.ALI_KEY_ID }} ${{ secrets.ALI_KEY_SECRET }}
 
 
