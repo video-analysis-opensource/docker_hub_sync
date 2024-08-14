@@ -47,6 +47,7 @@ ubuntu:23.10 zxiat-amd64/ubuntu:23.10
 ubuntu:22.04 zxiat-amd64/ubuntu:22.04
 ubuntu:20.04 zxiat-amd64/ubuntu:20.04
 centos:centos7.9.2009 zxiat-amd64/centos:centos7.9.2009
+centos:7.9.2009 zxiat-amd64/centos:7.9.2009
 centos:centos7 zxiat-amd64/centos:centos7
 centos:centos8.4.2105 zxiat-amd64/centos:centos8.4.2105
 centos:centos8 zxiat-amd64/centos:centos8
