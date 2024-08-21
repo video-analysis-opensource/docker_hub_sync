@@ -1,12 +1,8 @@
 rocm/dev-ubuntu-20.04:5.2-complete zxiat-amd64/rocm-dev-ubuntu-20.04:5.2-complete
 rocm/rocm-terminal:5.2 zxiat-amd64/rocm-terminal:5.2
-pytorch/pytorch:2.3.1-cuda11.8-cudnn8-devel zxiat-amd64/pytorch:2.3.1-cuda11.8-cudnn8-devel
 pytorch/pytorch:2.3.1-cuda11.8-cudnn8-runtime zxiat-amd64/pytorch:2.3.1-cuda11.8-cudnn8-runtime
-pytorch/pytorch:2.3.1-cuda12.1-cudnn8-devel zxiat-amd64/pytorch:2.3.1-cuda12.1-cudnn8-devel
 pytorch/pytorch:2.3.1-cuda12.1-cudnn8-runtime zxiat-amd64/pytorch:2.3.1-cuda12.1-cudnn8-runtime
-pytorch/pytorch:2.3.0-cuda12.1-cudnn8-devel zxiat-amd64/pytorch:2.3.0-cuda12.1-cudnn8-devel
 pytorch/pytorch:2.3.0-cuda12.1-cudnn8-runtime zxiat-amd64/pytorch:2.3.0-cuda12.1-cudnn8-runtime
-pytorch/pytorch:2.3.0-cuda11.8-cudnn8-devel zxiat-amd64/pytorch:2.3.0-cuda11.8-cudnn8-devel
 pytorch/pytorch:2.3.0-cuda11.8-cudnn8-runtime zxiat-amd64/pytorch:2.3.0-cuda11.8-cudnn8-runtime
 zhoukunpeng505/py38:2023-06-16-9f49228 zxiat-amd64/py38:2023-06-16-9f49228
 zhoukunpeng505/py38:2023-06-16-991451c zxiat-amd64/py38:2023-06-16-991451c
