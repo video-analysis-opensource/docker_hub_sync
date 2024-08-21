@@ -88,6 +88,7 @@ if __name__ == '__main__':
             # 先判断此tag是否已存在
             _0, _1 = target_image.split(":")
             res_aliyun = get_aliyun_tags(_0)
+            print("res_aliyun", res_aliyun, _0, _1)
             if _1 not in res_aliyun:
                 run_cmd(f"docker pull {source_image}")
                 run_cmd(f"docker tag {source_image} {domain}/{target_image}")
