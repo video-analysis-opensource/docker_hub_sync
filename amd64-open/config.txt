@@ -76,3 +76,4 @@ mariadb:10.8.7 zhoukunpeng/mariadb:10.8.7
 mariadb:11.1 zhoukunpeng/mariadb:11.1
 mariadb:11.2 zhoukunpeng/mariadb:11.2
 zhoukunpeng505/3proxy:latest zhoukunpeng/3proxy:latest
+heartexlabs/label-studio:latest zhoukunpeng/label-studio:latest
