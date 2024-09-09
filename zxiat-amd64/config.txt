@@ -80,6 +80,7 @@ quay.io/prometheus/node-exporter:v1.1.2 zxiat-amd64/node-exporter:v1.1.2
 quay.io/prometheus/blackbox-exporter:v0.18.0 zxiat-amd64/blackbox-exporter:v0.18.0
 quay.io/prometheus/alertmanager:v0.21.0 zxiat-amd64/alertmanager:v0.21.0
 quay.io/brancz/kube-rbac-proxy:v0.8.0 zxiat-amd64/kube-rbac-proxy:v0.8.0
+quay.io/prometheus-operator/prometheus-operator:v0.47.0 zxiat-amd64/prometheus-operator:v0.47.0
 k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0 zxiat-amd64/kube-state-metrics:v2.0.0
 jimmidyson/configmap-reload:v0.5.0 zxiat-amd64/configmap-reload:v0.5.0
 grafana/grafana:7.5.4 zxiat-amd64/grafana:7.5.4
