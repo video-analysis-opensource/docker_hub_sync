@@ -80,3 +80,10 @@ heartexlabs/label-studio:latest zhoukunpeng/label-studio:latest
 debian:10 zhoukunpeng/debian:10
 debian:11 zhoukunpeng/debian:11
 debian:12 zhoukunpeng/debian:12
+rockylinux:9.3 zhoukunpeng/rockylinux:9.3
+rockylinux:9.2 zhoukunpeng/rockylinux:9.2
+rockylinux:9.1 zhoukunpeng/rockylinux:9.1
+rockylinux:9 zhoukunpeng/rockylinux:9
+rockylinux:8.9 zhoukunpeng/rockylinux:8.9
+rockylinux:8 zhoukunpeng/rockylinux:8
+
