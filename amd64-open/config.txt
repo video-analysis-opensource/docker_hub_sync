@@ -77,3 +77,6 @@ mariadb:11.1 zhoukunpeng/mariadb:11.1
 mariadb:11.2 zhoukunpeng/mariadb:11.2
 zhoukunpeng505/3proxy:latest zhoukunpeng/3proxy:latest
 heartexlabs/label-studio:latest zhoukunpeng/label-studio:latest
+debian:10 zhoukunpeng/debian:10
+debian:11 zhoukunpeng/debian:11
+debian:12 zhoukunpeng/debian:12
