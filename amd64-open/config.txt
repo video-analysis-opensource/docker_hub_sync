@@ -86,4 +86,5 @@ rockylinux:9.1 zhoukunpeng/rockylinux:9.1
 rockylinux:9 zhoukunpeng/rockylinux:9
 rockylinux:8.9 zhoukunpeng/rockylinux:8.9
 rockylinux:8 zhoukunpeng/rockylinux:8
+quay.io/skopeo/stable:v1.16.1 zhoukunpeng/skopeo:v1.16.1
 
